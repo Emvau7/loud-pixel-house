@@ -50,23 +50,30 @@ git push -u origin main
 
 ### W panelu OVH (Strefa DNS domeny):
 
-Usuń istniejące domyślne rekordy `A` i `AAAA` dla `@` (rekordu głównego), które kolidują — OVH często ma tam domyślne przekierowanie/parkowanie.
+⚠️ Zmieniaj DNS dopiero w momencie włączania GitHub Pages dla tej domeny. Domena wskazująca na GitHuba bez "zajęcia" jej przez repo może zostać podpięta przez kogoś obcego.
 
-Dodaj następujące rekordy:
+Usuń domyślne rekordy parkingowe OVH (stan z 2026-09-26):
 
 | Typ | Nazwa (subdomena) | Wartość |
 |---|---|---|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| AAAA | @ | 2606:50c0:8000::153 |
-| AAAA | @ | 2606:50c0:8001::153 |
-| AAAA | @ | 2606:50c0:8002::153 |
-| AAAA | @ | 2606:50c0:8003::153 |
-| CNAME | www | `<twoj-login>.github.io.` |
+| A | (puste / @) | 213.186.33.5 |
+| A | www | 213.186.33.5 |
 
-(To są aktualne adresy GitHub Pages na dzień pisania tego README — jeśli GitHub w swoim panelu Pages pokaże inne, użyj tych z ich komunikatu.)
+Dodaj (to samo, co już działa dla `globalcut.pl`):
+
+| Typ | Nazwa (subdomena) | Wartość |
+|---|---|---|
+| A | (puste / @) | 185.199.108.153 |
+| A | (puste / @) | 185.199.109.153 |
+| A | (puste / @) | 185.199.110.153 |
+| A | (puste / @) | 185.199.111.153 |
+| CNAME | www | `emvau7.github.io.` |
+
+Opcjonalnie IPv6 (`globalcut.pl` działa bez nich): rekordy AAAA na `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`.
+
+**Nie usuwaj rekordów MX** (`mx1/mx2/mx3.mail.ovh.net`) ani TXT — obsługują pocztę w domenie.
+
+Źródło adresów: [dokumentacja GitHub Pages o własnych domenach](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). Jeśli GitHub kiedyś je zmieni, użyj wartości z dokumentacji.
 
 ### W GitHub:
 
