@@ -292,11 +292,12 @@
         const card = el("div", "price-card" + (tier.featured ? " is-featured" : ""));
         const features = tier.features.map((f) => `<li>${f}</li>`).join("");
         card.innerHTML = `
+          ${tier.badge ? `<span class="price-badge">${tier.badge}</span>` : ""}
           <h3>${tier.title}</h3>
           <div class="price-amount">
-            ${tier.priceQualifier && tier.priceQualifier !== "/mo" ? `<span class="price-qualifier">${tier.priceQualifier}</span>` : ""}
+            ${tier.priceQualifier ? `<span class="price-qualifier">${tier.priceQualifier}</span>` : ""}
             <span>${tier.price}</span>
-            ${tier.priceQualifier === "/mo" ? `<span class="price-qualifier">${tier.priceQualifier}</span>` : ""}
+            ${tier.pricePeriod ? `<span class="price-qualifier">${tier.pricePeriod}</span>` : ""}
           </div>
           <p class="price-desc">${tier.description}</p>
           <ul class="price-features">${features}</ul>

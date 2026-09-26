@@ -31,32 +31,32 @@ window.LPH_CONFIG = {
     {
       number: "01",
       title: "AI Video Ads",
-      description: "Product and brand videos generated with AI, then hand-finished — graded, sound-designed, and edited like a real ad. Not a raw generation with a caption slapped on.",
-      tag: "AI production"
+      description: "15–60 second ads for products, apps and brands. Script, AI generation, edit, grade and sound design — finished like a real production, delivered in every format you run.",
+      tag: "Core"
     },
     {
       number: "02",
-      title: "Reels & Short-Form Editing",
-      description: "Reels, TikToks and Shorts cut from your raw footage or long-form content. Hooks that hold, pacing that doesn't drag, captions that read.",
-      tag: "Editing"
+      title: "AI Reels",
+      description: "Vertical AI-driven content for Instagram, TikTok and Shorts. Built around a hook, designed as a series so your feed looks like one brand, not ten experiments.",
+      tag: "Social"
     },
     {
       number: "03",
-      title: "Content Extras",
-      description: "Thumbnails, social graphics, and on-site filming when a project needs it. Not the main event, but done to the same standard.",
-      tag: "Add-on"
+      title: "Short-Form Editing",
+      description: "Your footage or long-form content cut into Reels and Shorts that hold attention. Offered as a monthly retainer for brands that post every week.",
+      tag: "Retainer"
     }
   ],
 
   // Portfolio: 6 starter placeholders. Replace `src` with real files in assets/portfolio/
   // and this grid updates automatically — no HTML edits needed.
   portfolio: [
-    { title: "Placeholder reel #1", tag: "AI ad", src: "assets/portfolio/placeholder-1.mp4", poster: "" },
-    { title: "Placeholder reel #2", tag: "Reel edit", src: "assets/portfolio/placeholder-2.mp4", poster: "" },
-    { title: "Placeholder reel #3", tag: "AI ad", src: "assets/portfolio/placeholder-3.mp4", poster: "" },
-    { title: "Placeholder reel #4", tag: "Reel edit", src: "assets/portfolio/placeholder-4.mp4", poster: "" },
-    { title: "Placeholder reel #5", tag: "AI ad", src: "assets/portfolio/placeholder-5.mp4", poster: "" },
-    { title: "Placeholder reel #6", tag: "Reel edit", src: "assets/portfolio/placeholder-6.mp4", poster: "" }
+    { title: "Placeholder #1", tag: "AI ad", src: "assets/portfolio/placeholder-1.mp4", poster: "" },
+    { title: "Placeholder #2", tag: "AI ad", src: "assets/portfolio/placeholder-2.mp4", poster: "" },
+    { title: "Placeholder #3", tag: "AI reel", src: "assets/portfolio/placeholder-3.mp4", poster: "" },
+    { title: "Placeholder #4", tag: "AI ad", src: "assets/portfolio/placeholder-4.mp4", poster: "" },
+    { title: "Placeholder #5", tag: "AI reel", src: "assets/portfolio/placeholder-5.mp4", poster: "" },
+    { title: "Placeholder #6", tag: "Reel edit", src: "assets/portfolio/placeholder-6.mp4", poster: "" }
   ],
 
   process: [
@@ -66,52 +66,56 @@ window.LPH_CONFIG = {
     { number: "04", title: "Delivery & Revisions", description: "Final files in the formats you need, plus a set number of revision rounds included in the price." }
   ],
 
-  // Pricing: change numbers and labels here. Anything marked "TODO" is a
-  // placeholder — fill in a real price before launch.
+  // Pricing: change numbers and labels here. `badge` is the small label on the
+  // featured card — keep it honest (no "most booked" until it's true).
   pricing: {
-    note: "Final price depends on length, complexity, and number of revisions.",
-    customNote: "Custom projects — let's talk.",
+    note: "All prices in USD. Final quote depends on length, complexity and number of versions.",
+    customNote: "Bigger campaign? Let's talk.",
     tiers: [
       {
-        id: "ai-reel",
+        id: "ai-ad",
         featured: true,
-        title: "AI Reel",
-        price: "$100",
+        badge: "START HERE",
+        title: "AI Video Ad",
+        price: "$500",
         priceQualifier: "from",
-        description: "One AI-produced video, script to delivery.",
+        description: "One 15–30s ad, from script to final delivery.",
         features: [
-          "Script & concept included",
+          "Script & shot plan",
           "AI generation + hand-finishing",
-          "Color grade & sound design",
-          "2 revision rounds"
+          "Edit, color grade & sound design",
+          "9:16, 1:1 and 16:9 versions",
+          "2 revision rounds",
+          "Full commercial usage rights"
         ]
       },
       {
-        id: "reel-pack",
+        id: "campaign",
         featured: false,
-        title: "10-Reel Pack",
-        price: "TODO",
-        priceQualifier: "",
-        description: "A batch of 10 short-form edits from your raw footage.",
+        title: "Ad Campaign",
+        price: "$1,200",
+        priceQualifier: "from",
+        description: "Three ads, or one hero ad plus cutdowns for testing.",
         features: [
-          "10 Reels / TikToks / Shorts",
-          "Consistent style across the batch",
-          "Captions included",
-          "Revision rounds included"
+          "3 concepts or variations",
+          "Hook variations for A/B testing",
+          "All platform formats",
+          "Priority turnaround"
         ]
       },
       {
         id: "monthly",
         featured: false,
         title: "Monthly Retainer",
-        price: "TODO",
-        priceQualifier: "/mo",
-        description: "Ongoing short-form editing or AI ad production, monthly.",
+        price: "$2,000",
+        priceQualifier: "from",
+        pricePeriod: "/mo",
+        description: "Ongoing AI ads, AI reels or short-form editing.",
         features: [
-          "Set number of videos per month",
-          "Priority turnaround",
-          "One point of contact",
-          "Cancel anytime"
+          "Fixed monthly volume, agreed up front",
+          "Priority production slot",
+          "Monthly planning call",
+          "One point of contact"
         ]
       }
     ]
@@ -120,7 +124,11 @@ window.LPH_CONFIG = {
   faq: [
     {
       q: "How long does a project take?",
-      a: "A single AI Reel or short-form edit usually turns around in 3–5 business days. Larger batches or AI ad campaigns take longer — I'll give you a firm date after the brief."
+      a: "A single AI ad usually takes 5–10 business days from an approved script. Campaigns and retainers run on a schedule we agree up front — you get a firm date after the brief."
+    },
+    {
+      q: "Do you work with agencies?",
+      a: "Yes. I can produce AI ads under your agency's name for your clients, with the same process and turnaround."
     },
     {
       q: "How many revisions do I get?",
@@ -132,11 +140,11 @@ window.LPH_CONFIG = {
     },
     {
       q: "What file formats do I get?",
-      a: "Standard delivery is MP4 (H.264) in whatever aspect ratio your platform needs — vertical for Reels/TikTok/Shorts, horizontal or square on request."
+      a: "MP4 (H.264) in every aspect ratio you run: 9:16 for Reels, TikTok and Shorts, 1:1 for feeds, 16:9 for YouTube and web. Other specs on request."
     },
     {
       q: "How does payment work?",
-      a: "50% upfront to start, 50% on final delivery. For monthly retainers, billing is monthly in advance."
+      a: "Invoiced in USD. 50% upfront to start, 50% on final delivery. Monthly retainers are billed monthly in advance."
     },
     {
       q: "How do I start?",

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loud Pixel House — AI Video &amp; Short-Form Editing</title>
-<meta name="description" content="AI video ads and Reels/TikTok/Shorts editing, done properly. Loud Pixel House is a one-person studio producing polished AI video and short-form content for clients worldwide.">
+<title>Loud Pixel House — AI Video Ads for Brands &amp; Agencies</title>
+<meta name="description" content="AI video ads for brands and agencies worldwide — scripted, generated and hand-finished like a real production. AI reels and short-form retainers too. Projects from $500.">
 
 <link rel="canonical" href="https://loudpixelhouse.com/">
 <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://loudpixelhouse.com/">
 <meta property="og:site_name" content="Loud Pixel House">
 <meta property="og:title" content="Loud Pixel House — AI Video, Done Properly. No Slop.">
-<meta property="og:description" content="AI video ads and Reels/TikTok/Shorts editing for clients worldwide.">
+<meta property="og:description" content="AI video ads for brands and agencies worldwide, hand-finished like a real production.">
 <meta property="og:image" content="https://loudpixelhouse.com/assets/og/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Loud Pixel House — AI Video, Done Properly. No Slop.">
-<meta name="twitter:description" content="AI video ads and Reels/TikTok/Shorts editing for clients worldwide.">
+<meta name="twitter:description" content="AI video ads for brands and agencies worldwide, hand-finished like a real production.">
 <meta name="twitter:image" content="https://loudpixelhouse.com/assets/og/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,16 +41,17 @@
   "name": "Loud Pixel House",
   "url": "https://loudpixelhouse.com",
   "email": "loudpixelhouse@gmail.com",
-  "description": "AI video ads and Reels/TikTok/Shorts editing for clients worldwide.",
+  "description": "AI video ads for brands and agencies worldwide, plus AI reels and short-form editing retainers.",
+  "priceRange": "$500+",
   "areaServed": "Worldwide",
   "founder": { "@type": "Person", "name": "Mateusz" },
   "sameAs": [
     "https://instagram.com/loudpixelhouse"
   ],
   "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Video Ads" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reels & Short-Form Editing" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Content Extras: thumbnails, graphics, on-site filming" } }
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Video Ads" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 500, "priceCurrency": "USD" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Reels" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Short-Form Editing Retainer" } }
   ]
 }
 </script>
@@ -95,11 +96,12 @@
         <span class="glitch glitch--play" data-text="DONE PROPERLY.">DONE PROPERLY.</span>
         <span class="glitch glitch--play" data-text="NO SLOP.">NO SLOP.</span>
       </h1>
-      <p class="hero-sub">I cut Reels and short-form edits, and produce AI video ads that actually look like they cost something.</p>
+      <p class="hero-sub">AI video ads for brands and agencies worldwide. Scripted, generated and hand-finished, so they look like a real production, not a prompt.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#work">See my work</a>
         <a class="btn btn-outline-on-dark" href="#contact">Get a quote</a>
       </div>
+      <p class="hero-note">Projects from $500</p>
     </div>
     <div class="hero-scroll-cue" aria-hidden="true">
       <span class="line"></span>
@@ -110,7 +112,7 @@
   <section id="services" class="on-light">
     <div class="container">
       <span class="section-kicker">What I do</span>
-      <h2 class="section-heading">Two things, done well — not ten things, done fine.</h2>
+      <h2 class="section-heading">Fewer services. Higher standard.</h2>
       <div class="services-grid" data-services-grid></div>
     </div>
   </section>
@@ -154,6 +156,7 @@
     <div class="container">
       <span class="section-kicker">Get in touch</span>
       <h2 class="section-heading">Tell me about the project.</h2>
+      <p class="section-lede">Projects start at $500. Share the product, the goal and a rough deadline, and I'll come back with a concept and a quote.</p>
       <div class="contact-grid">
         <div class="contact-info">
           <div class="contact-info-item">
@@ -185,16 +188,22 @@
             <div class="field">
               <label for="project-type">Project type</label>
               <select id="project-type" name="project_type">
-                <option value="ai-reel">AI Reel</option>
-                <option value="reel-editing">Reel / short-form editing</option>
                 <option value="ai-ad">AI video ad</option>
+                <option value="campaign">Ad campaign (several ads)</option>
+                <option value="ai-reels">AI reels</option>
                 <option value="retainer">Monthly retainer</option>
                 <option value="other">Something else</option>
               </select>
             </div>
             <div class="field">
-              <label for="budget">Budget (approx.)</label>
-              <input type="text" id="budget" name="budget" placeholder="e.g. $200–500">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select a range</option>
+                <option value="500-1000">$500 – $1,000</option>
+                <option value="1000-3000">$1,000 – $3,000</option>
+                <option value="3000-10000">$3,000 – $10,000</option>
+                <option value="10000+">$10,000+</option>
+              </select>
             </div>
           </div>
           <div class="field">
