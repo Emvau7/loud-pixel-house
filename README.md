@@ -153,7 +153,7 @@ Formspree w darmowym planie może wymagać jednorazowego potwierdzenia e-maila p
 - [x] **Grafika OG** (`assets/og/og-image.png`, 1200×630) — kadr z filmu w tle + hasło + domena; pokazuje się przy udostępnianiu linku na Facebooku, WhatsAppie, LinkedInie itd.
 - [x] **Wideo hero** — dodane (`hero.mp4` 1,3 MB z płynną pętlą, `hero-mobile.mp4` 0,3 MB, `hero-poster.jpg`). Żeby podmienić, patrz punkt 5 wyżej.
 - [ ] **Filmy portfolio** (`assets/portfolio/*.mp4`) — patrz punkt 5 wyżej. Na razie 6 placeholderów w configu.
-- [x] **Ceny** — pozycjonowanie pod zagraniczne zlecenia: AI Video Ad od $500, Ad Campaign od $1,200, Monthly Retainer od $2,000/mies. (do zmiany w `js/config.js`).
+- [x] **Ceny** — pozycjonowanie pod zagraniczne zlecenia: AI Video Ad od $500, Ad Campaign od $1,200, Monthly Retainer $2,000/mies. za 6 filmów AI (do zmiany w `js/config.js`).
 - [ ] **ID formularza Formspree** w `js/config.js` → `form.formspreeId`.
 - [ ] **Linki social** — TikTok i YouTube w `js/config.js` → `social` to placeholdery (`@loudpixelhouse`) — zamień, gdy konta będą gotowe. Instagram (`instagram.com/loudpixelhouse`) też warto zweryfikować, że to dokładny link do Twojego profilu.
 - [ ] **Sekcja testimonials** — celowo nie dodana (brief mówił, żeby nie wymyślać fałszywych opinii). Jeśli zbierzesz prawdziwe opinie klientów, daj znać — dodam sekcję.

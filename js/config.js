@@ -108,14 +108,14 @@ window.LPH_CONFIG = {
         featured: false,
         title: "Monthly Retainer",
         price: "$2,000",
-        priceQualifier: "from",
+        priceQualifier: "",
         pricePeriod: "/mo",
-        description: "Ongoing AI ads, AI reels or short-form editing.",
+        description: "6 AI videos every month — ads or reels, planned together.",
         features: [
-          "Fixed monthly volume, agreed up front",
+          "6 AI videos per month",
+          "All platform formats",
           "Priority production slot",
-          "Monthly planning call",
-          "One point of contact"
+          "Monthly planning call"
         ]
       }
     ]
